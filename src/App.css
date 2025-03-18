@@ -1,0 +1,393 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.bean-scene-hero-section {
+  background-image: url(./assets/Bean-Scene-Hero-Image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 90px;
+}
+.bean-scene-hero-section .bean-scene-nav {
+  display: flex;
+  padding-top: 21px;
+  justify-content: space-between;
+  align-items: center;
+}
+.bean-scene-hero-section .bean-scene-nav .bean-scene-nav-logo span {
+  font-family: "Clicker Script", cursive;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 46px;
+  color: white;
+  font-weight: lighter;
+}
+.bean-scene-hero-section .bean-scene-nav .bean-scene-nav-menu {
+  display: flex;
+  gap: 60px;
+}
+.bean-scene-hero-section .bean-scene-nav .bean-scene-nav-menu a {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+}
+.bean-scene-hero-section .bean-scene-nav .bean-scene-nav-links {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+.bean-scene-hero-section .bean-scene-nav .bean-scene-nav-links a {
+  text-decoration: none;
+  color: white;
+}
+.bean-scene-hero-section .bean-scene-main-section {
+  margin-top: 110px;
+  width: 600px;
+}
+.bean-scene-hero-section .bean-scene-main-section p:first-child {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 29px;
+  font-weight: 500;
+  color: white;
+}
+.bean-scene-hero-section .bean-scene-main-section p:nth-child(2) {
+  font-family: "Clicker Script", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 220px;
+  line-height: 291px;
+  color: white;
+}
+.bean-scene-hero-section .bean-scene-main-section p:nth-child(3) {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  color: #707070;
+  color: white;
+}
+
+.discover-coffee-content-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 82px;
+}
+.discover-coffee-content-section .discover-coffee-content {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+  max-width: 600px;
+  animation-name: left;
+  animation-delay: 10s;
+  animation-timeline: scroll();
+  animation-range: cover;
+}
+.discover-coffee-content-section .discover-coffee-content span:first-child {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 72px;
+  color: #603809;
+}
+.discover-coffee-content-section .discover-coffee-content span:nth-child(2) {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  color: #707070;
+}
+.discover-coffee-content-section .discover-coffee-image {
+  animation-name: right;
+  animation-delay: 10s;
+  animation-timeline: scroll();
+  animation-range: cover;
+}
+
+.coffee-blast-one {
+  position: absolute;
+  top: 1150px;
+}
+
+.coffee-style-card-content-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin-top: 82px;
+}
+.coffee-style-card-content-section .coffee-style-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.coffee-style-card-content-section .coffee-style-card-text span:first-child {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 72px;
+  color: #603809;
+}
+.coffee-style-card-content-section .coffee-style-card-text span:last-child {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  color: #707070;
+}
+.coffee-style-card-content-section .coffee-style-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.why-are-we-different-content-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  margin-top: 82px;
+}
+.why-are-we-different-content-section .different-text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.why-are-we-different-content-section .different-text-section span:first-child {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 72px;
+  color: #603809;
+}
+.why-are-we-different-content-section .different-text-section span:last-child {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  color: #707070;
+}
+.why-are-we-different-content-section .different-card-section {
+  display: flex;
+  gap: 20px;
+  animation-name: leftSweep;
+  animation-delay: 10s;
+  animation-timeline: scroll();
+  animation-range: cover;
+}
+.why-are-we-different-content-section .different-text-bottom-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.why-are-we-different-content-section .different-text-bottom-section span:first-child {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+  color: #603809;
+}
+.why-are-we-different-content-section .different-text-bottom-section span:last-child {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  color: #707070;
+}
+
+.amazing-morning-section {
+  background-image: url(./assets/coffee-back-3-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 82px;
+}
+.amazing-morning-section .amazing-morning-content-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0px;
+}
+.amazing-morning-section .amazing-morning-content-section .amazing-morning-content {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  animation-name: alive;
+  animation-duration: 10s;
+  animation-timeline: scroll();
+  animation-range: cover;
+}
+.amazing-morning-section .amazing-morning-content-section .amazing-morning-content span:first-child {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 72px;
+  color: #603809;
+  color: white;
+}
+.amazing-morning-section .amazing-morning-content-section .amazing-morning-content span:nth-child(2) {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  color: #707070;
+  color: white;
+}
+.amazing-morning-section .amazing-morning-content-section .amazing-morning-image img {
+  animation: spin 3s linear infinite;
+}
+
+.bean-scene-footer {
+  background-image: url(./assets/coffee-back-3-resized.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.bean-scene-footer .bean-scene-footer-content-section {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 162px;
+  padding-bottom: 72px;
+}
+.bean-scene-footer .bean-scene-footer-content-section .logo-with-icons-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bean-scene-footer .bean-scene-footer-content-section .logo-with-icons-section span:first-child {
+  font-family: "Clicker Script", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 71px;
+  color: white;
+}
+.bean-scene-footer .bean-scene-footer-content-section .logo-with-icons-section p {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: white;
+  line-height: 22px;
+  max-width: 300px;
+}
+.bean-scene-footer .bean-scene-footer-content-section .logo-with-icons-section .social-icons-section {
+  display: flex;
+  max-width: 150px;
+  justify-content: space-between;
+}
+.bean-scene-footer .bean-scene-footer-content-section .about-menu-section ul,
+.bean-scene-footer .bean-scene-footer-content-section .company-menu-section ul,
+.bean-scene-footer .bean-scene-footer-content-section .contact-us-menu-section ul {
+  list-style: none;
+}
+.bean-scene-footer .bean-scene-footer-content-section .about-menu-section ul li a,
+.bean-scene-footer .bean-scene-footer-content-section .company-menu-section ul li a,
+.bean-scene-footer .bean-scene-footer-content-section .contact-us-menu-section ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  line-height: 42px;
+}
+.bean-scene-footer .bean-scene-footer-content-section .about-menu-section ul li:first-child,
+.bean-scene-footer .bean-scene-footer-content-section .company-menu-section ul li:first-child,
+.bean-scene-footer .bean-scene-footer-content-section .contact-us-menu-section ul li:first-child {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 35px;
+  color: white;
+  margin-bottom: 30px;
+}
+.bean-scene-footer .bean-scene-footer-content-section .contact-us-menu-section {
+  width: 300px;
+}
+.bean-scene-footer .bean-scene-footer-content-section .contact-us-menu-section li:nth-child(2) a {
+  line-height: 23px;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: scale(0.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+@keyframes appear {
+  0% {
+    transform: scaleY(0);
+  }
+  20% {
+    transform: scaleY(1);
+  }
+}
+@keyframes left {
+  0% {
+    transform: translateX(-100%);
+  }
+  20% {
+    transform: translateX(0);
+  }
+}
+@keyframes right {
+  0% {
+    transform: translateX(-100%);
+  }
+  20% {
+    transform: translateX(0%);
+  }
+}
+@keyframes alive {
+  from {
+    visibility: hidden;
+    opacity: 0.5;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotateY(-45deg);
+  }
+  to {
+    transform: rotateY(45deg);
+  }
+}/*# sourceMappingURL=App.css.map */

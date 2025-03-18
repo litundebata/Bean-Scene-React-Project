@@ -1,0 +1,5 @@
+@import '../sass/button';
+
+button{
+    @include button-component;
+}

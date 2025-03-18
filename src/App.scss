@@ -1,0 +1,385 @@
+// @import '~bootstrap/scss/bootstrap';
+
+@import './sass/colors';
+@import './sass/typography';
+@import './sass/button';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.bean-scene-hero-section {
+    background-image: url(./assets/Bean-Scene-Hero-Image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 90px;
+
+
+    .bean-scene-nav {
+        display: flex;
+        padding-top: 21px;
+        justify-content: space-between;
+        align-items: center;
+
+        .bean-scene-nav-logo {
+            span {
+                @include clicker-regular-35;
+                font-weight: lighter;
+            }
+        }
+
+        .bean-scene-nav-menu {
+            // border: 2px solid red;
+            display: flex;
+            gap: 60px;
+
+            a {
+                @include playfair-bold-14;
+                font-weight: 500;
+                text-decoration: none;
+                color: $neutral-color-w;
+            }
+        }
+
+        .bean-scene-nav-links {
+            @include playfair-bold-14;
+            display: flex;
+            align-items: center;
+            gap: 35px;
+
+            a {
+                text-decoration: none;
+                color: $neutral-color-w;
+            }
+        }
+    }
+
+    .bean-scene-main-section {
+        margin-top: 110px;
+        width: 600px;
+
+        p:first-child {
+            @include playfair-bold-22;
+            font-weight: 500;
+            color: $neutral-color-w;
+        }
+
+        p:nth-child(2) {
+            @include clicker-regular-220;
+        }
+
+        p:nth-child(3) {
+            @include playfair-regular-20;
+            color: $neutral-color-w;
+        }
+    }
+}
+
+
+.discover-coffee-content-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 82px;
+
+
+    .discover-coffee-content {
+        display: flex;
+        flex-direction: column;
+        gap: 29px;
+        max-width: 600px;
+
+        animation-name: left;
+        animation-delay: 10s;
+        animation-timeline: scroll();
+        animation-range: cover;
+
+
+        span:first-child {
+            @include playfair-bold-54;
+        }
+
+        span:nth-child(2) {
+            @include playfair-regular-20;
+        }
+    }
+
+    .discover-coffee-image {
+        animation-name: right;
+        animation-delay: 10s;
+        animation-timeline: scroll();
+        animation-range: cover;
+    }
+}
+
+.coffee-blast-one {
+    position: absolute;
+    top: 1150px;
+}
+
+.coffee-style-card-content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin-top: 82px;
+
+    .coffee-style-card-text {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+
+        span:first-child {
+            @include playfair-bold-54;
+        }
+
+        span:last-child {
+            @include playfair-regular-20;
+        }
+    }
+
+    .coffee-style-cards {
+        display: flex;
+        gap: 20px;
+
+    }
+}
+
+.why-are-we-different-content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin-top: 82px;
+
+    .different-text-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+
+        span:first-child {
+            @include playfair-bold-54;
+        }
+
+        span:last-child {
+            @include playfair-regular-20;
+        }
+    }
+
+    .different-card-section {
+        display: flex;
+        gap: 20px;
+
+        animation-name: leftSweep;
+        animation-delay: 10s;
+        animation-timeline: scroll();
+        animation-range: cover;
+    }
+
+    .different-text-bottom-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        span:first-child {
+            @include playfair-bold-30;
+            color: $secondary-text-color-one;
+        }
+
+        span:last-child {
+            @include playfair-regular-20
+        }
+    }
+}
+
+.amazing-morning-section {
+    background-image: url(./assets/coffee-back-3-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 82px;
+
+    .amazing-morning-content-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 0px;
+
+        .amazing-morning-content {
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+
+            animation-name: alive;
+            animation-duration: 10s;
+            animation-timeline: scroll();
+            animation-range: cover;
+
+            span:first-child {
+                @include playfair-bold-54;
+                color: $neutral-color-w;
+            }
+
+            span:nth-child(2) {
+                @include playfair-regular-20;
+                color: $neutral-color-w;
+            }
+
+        }
+
+        .amazing-morning-image {
+            img {
+                animation: spin 3s linear infinite;
+            }
+        }
+
+    }
+}
+
+.bean-scene-footer {
+    background-image: url(./assets/coffee-back-3-resized.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    .bean-scene-footer-content-section {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 162px;
+        padding-bottom: 72px;
+
+        .logo-with-icons-section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            span:first-child {
+                @include clicker-regular-54;
+            }
+
+            p {
+                @include playfair-regular-14;
+                color: $neutral-color-w;
+                line-height: 22px;
+                max-width: 300px;
+            }
+
+            .social-icons-section {
+                display: flex;
+                max-width: 150px;
+                justify-content: space-between;
+            }
+        }
+
+        .about-menu-section,
+        .company-menu-section,
+        .contact-us-menu-section {
+
+            ul {
+                list-style: none;
+
+                li {
+                    a {
+                        text-decoration: none;
+                        color: $neutral-color-w;
+                        @include playfair-regular-18;
+                        line-height: 42px;
+                    }
+                }
+
+                li:first-child {
+                    @include playfair-bold-26;
+                    color: $neutral-color-w;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+
+        .contact-us-menu-section {
+            width: 300px;
+
+            li:nth-child(2) {
+                a {
+                    line-height: 23px;
+                }
+            }
+        }
+
+    }
+
+
+
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: scale(0.1);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+}
+
+@keyframes appear {
+    0% {
+        transform: scaleY(0);
+        // transform-origin: bottom;
+    }
+
+    20% {
+        transform: scaleY(1);
+    }
+}
+
+
+
+@keyframes left {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    20% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes right {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    20% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes alive {
+    from {
+        visibility: hidden;
+        opacity: 0.5;
+    }
+
+    to {
+       visibility: visible;
+       opacity: 1;
+    }
+}
+
+
+@keyframes spin {
+    from {
+        transform: rotateY(-45deg);
+    }
+
+    to {
+        transform: rotateY(45deg);
+    }
+}

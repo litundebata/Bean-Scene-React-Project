@@ -1,0 +1,72 @@
+.different-card {
+  display: flex;
+  flex-direction: column;
+  padding: 36px 30px;
+  background-color: #fff9f1;
+  align-items: center;
+  width: 280px;
+  /* Create View Timeline */
+  view-timeline-name: --different-card;
+  view-timeline-axis: block;
+  /* Attach animation, linked to the  View Timeline */
+  animation: linear reveal both;
+  animation-timeline: --different-card;
+  /* Tweak range when effect should run*/
+  animation-range: entry 20% cover 40%;
+}
+.different-card img {
+  width: 100px;
+  height: 100px;
+}
+.different-card .different-card-title {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 37px;
+  color: #603809;
+  margin-top: 25px;
+}
+.different-card .different-card-text {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  color: #707070;
+  margin-top: 8px;
+}
+.different-card .different-card-bottom-text {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  color: #707070;
+  margin-top: -5px;
+}
+
+.different-card:first-child {
+  background-color: #ffefd8;
+}
+
+@keyframes scaling {
+  from {
+    transform: scale(0.3);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes reveal {
+  from {
+    opacity: 0;
+    -webkit-clip-path: inset(45% 20% 45% 20%);
+            clip-path: inset(45% 20% 45% 20%);
+  }
+  to {
+    opacity: 1;
+    -webkit-clip-path: inset(0% 0% -10% 0%);
+            clip-path: inset(0% 0% -10% 0%);
+  }
+}/*# sourceMappingURL=Different_Cards.css.map */

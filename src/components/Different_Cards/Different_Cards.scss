@@ -1,0 +1,74 @@
+@import "../../sass/colors";
+@import "../../sass/typography";
+
+.different-card{
+    display: flex;
+    flex-direction: column;
+    padding: 36px 30px;
+    background-color: $background-color-20;
+    align-items: center;
+    width: 280px;
+
+    // animation-name: scaling;
+    // animation-delay: 10s;
+    // animation-timeline: scroll();
+    // animation-range: cover;
+
+     /* Create View Timeline */
+	view-timeline-name: --different-card;
+	view-timeline-axis: block;
+
+	/* Attach animation, linked to the  View Timeline */
+	animation: linear reveal both;
+	animation-timeline: --different-card;
+
+	/* Tweak range when effect should run*/
+	animation-range: entry 20% cover 40%;
+
+
+    img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .different-card-title{
+        @include playfair-bold-28;
+        color: $secondary-text-color-one;
+        margin-top: 25px; 
+    }
+
+    .different-card-text{
+        @include playfair-regular-20;
+        margin-top: 8px
+    }
+
+    .different-card-bottom-text{
+        @include playfair-regular-20;
+        margin-top: -5px;
+    }
+}
+
+.different-card:first-child{
+    background-color: #ffefd8;
+}
+
+@keyframes scaling {
+    from {
+        transform: scale(0.3);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes reveal {
+	from {
+		opacity: 0;
+		clip-path: inset(45% 20% 45% 20%);
+	}
+	to {
+		opacity: 1;
+		clip-path: inset(0% 0% -10% 0%);
+	}
+}

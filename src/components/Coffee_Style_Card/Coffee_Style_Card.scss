@@ -1,0 +1,71 @@
+@import "../../sass/colors";
+@import "../../sass/typography";
+
+.coffee-style-card{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+    background-color: $background-color-20;
+    border: 1px solid #f9c06a7d;
+
+    // animation-name: fade;
+    // animation-duration: 1s;
+    // animation-timeline: scroll(block);
+    // animation-range: contain;
+
+    /* Create View Timeline */
+	view-timeline-name: --coffee-style-card;
+	view-timeline-axis: block;
+
+	/* Attach animation, linked to the  View Timeline */
+	animation: linear reveal both;
+	animation-timeline: --coffee-style-card;
+
+	/* Tweak range when effect should run*/ 
+	animation-range: entry 15% cover 30%;
+
+
+    .coffee-style-card-details{
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        align-items: center;
+
+        span:first-child{
+            @include playfair-bold-22;
+            color: $secondary-text-color-one;
+        }
+
+        span:nth-child(2){
+            @include playfair-regular-16;
+            color: #1e1e1e;
+        }
+
+        span:last-child{
+            @include playfair-bold-18;
+            color: $secondary-text-color-one;
+        }
+    }
+}
+
+@keyframes fade {
+    0% {                
+        transform: scale(0.3);
+    }
+    
+    50% {
+        transform: scale(1);
+    }
+}
+
+@keyframes reveal {
+	from {
+		opacity: 0;
+		clip-path: inset(45% 20% 45% 20%);
+	}
+	to {
+		opacity: 1;
+		clip-path: inset(0% 0% -10% 0%);
+	}
+}

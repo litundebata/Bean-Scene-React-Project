@@ -1,0 +1,67 @@
+.coffee-style-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+  background-color: #fff9f1;
+  border: 1px solid rgba(249, 192, 106, 0.4901960784);
+  /* Create View Timeline */
+  view-timeline-name: --coffee-style-card;
+  view-timeline-axis: block;
+  /* Attach animation, linked to the  View Timeline */
+  animation: linear reveal both;
+  animation-timeline: --coffee-style-card;
+  /* Tweak range when effect should run*/
+  animation-range: entry 15% cover 30%;
+}
+.coffee-style-card .coffee-style-card-details {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+}
+.coffee-style-card .coffee-style-card-details span:first-child {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 29px;
+  color: #603809;
+}
+.coffee-style-card .coffee-style-card-details span:nth-child(2) {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #1e1e1e;
+}
+.coffee-style-card .coffee-style-card-details span:last-child {
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  color: #603809;
+}
+
+@keyframes fade {
+  0% {
+    transform: scale(0.3);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+@keyframes reveal {
+  from {
+    opacity: 0;
+    -webkit-clip-path: inset(45% 20% 45% 20%);
+            clip-path: inset(45% 20% 45% 20%);
+  }
+  to {
+    opacity: 1;
+    -webkit-clip-path: inset(0% 0% -10% 0%);
+            clip-path: inset(0% 0% -10% 0%);
+  }
+}/*# sourceMappingURL=Coffee_Style_Card.css.map */

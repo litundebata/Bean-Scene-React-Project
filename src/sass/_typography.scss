@@ -1,0 +1,239 @@
+@import "colors";
+
+$clicker-font-family: "Clicker Script", cursive;
+
+$clicker-font-weight: 400;
+
+$clicker-font-style: normal;
+
+$clicker-font-size-35: 35px;
+$clicker-font-size-54: 54px;
+$clicker-font-size-220: 220px;
+
+$clicker-line-height-46: 46px;
+$clicker-line-height-71: 71px;
+$clicker-line-height-291: 291px;
+
+$playfair-display-font-family: "Playfair Display", serif;
+
+$playfair-display-font-weight-400: 400;
+$playfair-display-font-weight-500: 500;
+$playfair-display-font-weight-600: 600;
+$playfair-display-font-weight-700: 700;
+$playfair-display-font-weight-800: 800;
+$playfair-display-font-weight-900: 900;
+
+$playfair-display-font-size-14: 14px;
+$playfair-display-font-size-16: 16px;
+$playfair-display-font-size-18: 18px;
+$playfair-display-font-size-20: 20px;
+$playfair-display-font-size-22: 22px;
+$playfair-display-font-size-26: 26px;
+$playfair-display-font-size-28: 28px;
+$playfair-display-font-size-30: 30px;
+$playfair-display-font-size-32: 32px;
+$playfair-display-font-size-54: 54px;
+
+$playfair-display-font-style: normal;
+
+$playfair-display-line-height-19: 19px;
+$playfair-display-line-height-21: 21px;
+$playfair-display-line-height-24: 21px;
+$playfair-display-line-height-29: 29px;
+$playfair-display-line-height-34: 34px;
+$playfair-display-line-height-35: 35px;
+$playfair-display-line-height-37: 37px;
+$playfair-display-line-height-40: 40px;
+$playfair-display-line-height-43: 43px;
+$playfair-display-line-height-72: 72px;
+
+
+@mixin clicker-regular-35{
+    font-family: $clicker-font-family;
+    // font-style: $clicker-font-style;
+    font-weight: $clicker-font-weight;
+    font-size: $clicker-font-size-35;
+    line-height: $clicker-line-height-46;
+    color: $neutral-color-w;
+}
+
+@mixin clicker-regular-54{
+    font-family: $clicker-font-family;
+    font-style: $clicker-font-style;
+    font-weight: $clicker-font-weight;
+    font-size: $clicker-font-size-54;
+    line-height: $clicker-line-height-71;
+    color: $neutral-color-w;
+}
+
+@mixin clicker-regular-220{
+    font-family: $clicker-font-family;
+    font-style: $clicker-font-style;
+    font-weight: $clicker-font-weight;
+    font-size: $clicker-font-size-220;
+    line-height: $clicker-line-height-291;
+    color: $neutral-color-w;
+}
+
+@mixin playfair-regular-14{
+    font-family: $playfair-display-font-family;
+    font-style: $playfair-display-font-style;
+    font-weight: $playfair-display-font-weight-400;
+    font-size: $playfair-display-font-size-14;
+    line-height: $playfair-display-line-height-19;
+}
+
+@mixin playfair-medium-14{
+    font-family: $playfair-display-font-family;
+    font-style: $playfair-display-font-style;
+    font-weight: $playfair-display-font-weight-500;
+    font-size: $playfair-display-font-size-14;
+    line-height: $playfair-display-line-height-19;
+}
+
+@mixin playfair-bold-14{
+    font-family: $playfair-display-font-family;
+    font-style: $playfair-display-font-style;
+    font-weight: $playfair-display-font-weight-600;
+    font-size: $playfair-display-font-size-14;
+    line-height: $playfair-display-line-height-19;
+}
+
+@mixin playfair-regular-16{
+    font-family: $playfair-display-font-family;
+    font-style: $playfair-display-font-style;
+    font-weight: $playfair-display-font-weight-400;
+    font-size: $playfair-display-font-size-16;
+    line-height: $playfair-display-line-height-21;
+}
+
+@mixin playfair-bold-16{
+    font-family: $playfair-display-font-family;
+    font-style: $playfair-display-font-style;
+    font-weight: $playfair-display-font-weight-600;
+    font-size: $playfair-display-font-size-16;
+    line-height: $playfair-display-line-height-21;
+}
+
+@mixin playfair-regular-18{
+    font-family: $playfair-display-font-family;
+    font-style: $playfair-display-font-style;
+    font-weight: $playfair-display-font-weight-400;
+    font-size: $playfair-display-font-size-18;
+    line-height: $playfair-display-line-height-24;
+}
+
+@mixin playfair-bold-18{
+    font-family: $playfair-display-font-family;
+    font-style: $playfair-display-font-style;
+    font-weight: $playfair-display-font-weight-600;
+    font-size: $playfair-display-font-size-18;
+    line-height: $playfair-display-line-height-24;
+}
+
+@mixin playfair-regular-20{
+    font-family: $playfair-display-font-family;
+    font-style: $playfair-display-font-style;
+    font-weight: $playfair-display-font-weight-400;
+    font-size: $playfair-display-font-size-20;
+    line-height: $playfair-display-line-height-34;
+    color: $secondary-text-color-two;
+}
+
+@mixin playfair-bold-20{
+    font-family: $playfair-display-font-family;
+    font-style: $playfair-display-font-style;
+    font-weight: $playfair-display-font-weight-500;
+    font-size: $playfair-display-font-size-20;
+    line-height: $playfair-display-line-height-34;
+    color: $secondary-text-color-two;
+}
+
+@mixin playfair-regular-22{
+    font-family: $playfair-display-font-family;
+    font-style: $playfair-display-font-style;
+    font-weight: $playfair-display-font-weight-400;
+    font-size: $playfair-display-font-size-22;
+    line-height: $playfair-display-line-height-29;
+}
+
+@mixin playfair-bold-22{
+    font-family: $playfair-display-font-family;
+    font-style: $playfair-display-font-style;
+    font-weight: $playfair-display-font-weight-600;
+    font-size: $playfair-display-font-size-22;
+    line-height: $playfair-display-line-height-29;
+}
+
+@mixin playfair-regular-26{
+    font-family: $playfair-display-font-family;
+    font-style: $playfair-display-font-style;
+    font-weight: $playfair-display-font-weight-400;
+    font-size: $playfair-display-font-size-26;
+    line-height: $playfair-display-line-height-35;
+}
+
+@mixin playfair-bold-26{
+    font-family: $playfair-display-font-family;
+    font-style: $playfair-display-font-style;
+    font-weight: $playfair-display-font-weight-600;
+    font-size: $playfair-display-font-size-26;
+    line-height: $playfair-display-line-height-35;
+}
+
+@mixin playfair-regular-28{
+    font-family: $playfair-display-font-family;
+    font-style: $playfair-display-font-style;
+    font-weight: $playfair-display-font-weight-400;
+    font-size: $playfair-display-font-size-28;
+    line-height: $playfair-display-line-height-37;
+}
+
+@mixin playfair-bold-28{
+    font-family: $playfair-display-font-family;
+    font-style: $playfair-display-font-style;
+    font-weight: $playfair-display-font-weight-600;
+    font-size: $playfair-display-font-size-28;
+    line-height: $playfair-display-line-height-37;
+}
+
+@mixin playfair-regular-30{
+    font-family: $playfair-display-font-family;
+    font-style: $playfair-display-font-style;
+    font-weight: $playfair-display-font-weight-400;
+    font-size: $playfair-display-font-size-30;
+    line-height: $playfair-display-line-height-40;
+}
+
+@mixin playfair-bold-30{
+    font-family: $playfair-display-font-family;
+    font-style: $playfair-display-font-style;
+    font-weight: $playfair-display-font-weight-600;
+    font-size: $playfair-display-font-size-30;
+    line-height: $playfair-display-line-height-40;
+}
+
+@mixin playfair-regular-32{
+    font-family: $playfair-display-font-family;
+    font-style: $playfair-display-font-style;
+    font-weight: $playfair-display-font-weight-400;
+    font-size: $playfair-display-font-size-32;
+    line-height: $playfair-display-line-height-43;
+}
+
+@mixin playfair-bold-32{
+    font-family: $playfair-display-font-family;
+    font-style: $playfair-display-font-style;
+    font-weight: $playfair-display-font-weight-600;
+    font-size: $playfair-display-font-size-32;
+    line-height: $playfair-display-line-height-43;
+}
+
+@mixin playfair-bold-54{
+    font-family: $playfair-display-font-family;
+    font-style: $playfair-display-font-style;
+    font-weight: $playfair-display-font-weight-600;
+    font-size: $playfair-display-font-size-54;
+    line-height: $playfair-display-line-height-72;
+    color: $secondary-text-color-one;
+}
