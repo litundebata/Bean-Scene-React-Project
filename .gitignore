@@ -23,10 +23,10 @@ dist-ssr
 *.sln
 *.sw?
 
-App.css.map
-Button.css.map
-Button.css
-Coffee_Style_Card.css.map
-Coffee_Style_Card.css
-Different_Cards.css.map
-Different_Cards.css
+/App.css.map
+/Button.css.map
+/Button.css
+/Coffee_Style_Card.css.map
+/Coffee_Style_Card.css
+/Different_Cards.css.map
+/Different_Cards.css
